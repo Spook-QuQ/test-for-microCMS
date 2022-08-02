@@ -30,7 +30,7 @@ jobs:
         run: yarn generate
         env:
           microCMS_api_key: ${{ secrets.MICROCMS_API_KEY }}
-          microCMS_url: ${{ MICROCMS_URL }}
+          microCMS_url: ${{ secrets.MICROCMS_URL }}
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
