@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/articles", {data:[{contents:[{id:"1drz3ujhmo",title:"（サンプル）まずはこの記事を開きましょう",createdAt:"2022-08-01T04:03:43.442Z"}],totalCount:1,offset:0,limit:10}],fetch:{},mutations:void 0});
