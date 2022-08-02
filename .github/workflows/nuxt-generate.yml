@@ -5,6 +5,7 @@ on:
     types: [nuxt-generate]
   push:
   pull_request:
+
 jobs:
   cd: # Continuous Delivery
     runs-on: ${{ matrix.os }}
@@ -36,4 +37,4 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./
+          publish_dir: ./dist
