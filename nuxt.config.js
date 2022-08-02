@@ -83,5 +83,11 @@ export default {
 
   generate: {
     interval: 100
+  },
+
+ // github actionsに公開するときは username.github.io/project_name になるので
+ // クライアントのJavaScriptが_nuxtにアクセスできるようにbaseURLを設定しないといけない
+  router: {
+    base: '/test-for-microCMS/'
   }
 }
