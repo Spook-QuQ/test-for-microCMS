@@ -15,7 +15,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+
       - run: yarn && yarn generate
+        env:
+          microCMS_api_key: ${{ secrets.MICROCMS_API_KEY }}
+          microCMS_url: ${{ secrets.MICROCMS_URL }}
+
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: '${{ secrets.GITHUB_TOKEN }}'
