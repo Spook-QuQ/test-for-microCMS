@@ -85,11 +85,11 @@ export default {
     interval: 100
   },
 
- // github actionsに公開するときは username.github.io/project_name になるので
+ // github pages に公開するときは username.github.io/project_name になるので
  // クライアントのJavaScriptが_nuxtにアクセスできるように、
  // リンクがちゃんとbaseUrl以下のassetsに辿り着けるように
  // baseURLを設定しないといけない
   router: {
-    base: '/test-for-microCMS/'
+    // base: '/test-for-microCMS/'
   }
 }
