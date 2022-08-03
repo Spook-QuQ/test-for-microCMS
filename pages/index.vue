@@ -77,7 +77,23 @@
 </template>
 
 <script>
+import {
+  mapActions
+} from 'vuex'
+
 export default {
-  name: 'IndexPage'
+  name: 'IndexPage',
+  head: {
+    title: "HOME"
+  },
+  mounted () {
+    this.$myTestPlugin.sushi()
+    this.$myTestPlugin.sushi('Tamago')
+
+    this.testAction()
+  },
+  methods: {
+    ...mapActions('testStore', ['testAction'])
+  }
 }
 </script>
